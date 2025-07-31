@@ -15,7 +15,7 @@ const MenuDisplay = () => {
       </div>
 
       {/* Dark Menu Content Section */}
-      <div className="flex-grow bg-red-950 text-white p-12 flex flex-col justify-start items-center overflow-y-auto">
+      <div className="flex-grow bg-red-950 text-white p-8 flex flex-col justify-start items-center overflow-y-auto"> {/* Reduced padding */}
         <div className="w-full max-w-3xl">
           <MenuItem
             name="Stuffed Grape Leaves"
@@ -34,6 +34,35 @@ const MenuDisplay = () => {
           <MenuItem
             name="Baba Ghannoug"
             price=".sm $5.50 .Lg $9.99"
+          />
+          <MenuItem
+            name="Falafel"
+            description="(4 Pieces) Ground chickpeas, fava beans, and spices deep fried golden brown."
+            price="$7.99"
+          />
+          <MenuItem
+            name="Fatayer (Spinach Pie)"
+            description="(1 Piece) Baked dough stuffed with spinach, onion, pine nuts, sumac and lemon juice."
+            price="$3.99"
+          />
+          <MenuItem
+            name="Sambousik (Meat Pie)"
+            description="(1 Piece) Baked dough stuffed with ground beef, onion and pine nuts."
+            price="$3.99"
+          />
+          <MenuItem
+            name="Foul Mudammas"
+            description="Fava beans cooked and seasoned with garlic, lemon juice and olive oil."
+            price="$7.99"
+          />
+          <MenuItem
+            name="Labneh"
+            description="Creamy strained yogurt spread topped with olive oil and mint."
+            price="$6.99"
+          />
+          <MenuItem
+            name="French Fries"
+            price="$4.99"
           />
         </div>
       </div>
