@@ -58,10 +58,6 @@ const MenuDisplay = () => {
             description="Creamy strained yogurt spread topped with olive oil and mint."
             price="$6.99"
           />
-          <MenuItem
-            name="French Fries"
-            price="$4.99"
-          />
         </div>
 
         {/* Salads Section */}
@@ -168,7 +164,7 @@ const MenuDisplay = () => {
           <MenuItem name="Greek Salad" price="$4.99" />
           <MenuItem name="Falafel per piece" price="$1.20" />
           <MenuItem name="Extra Sauce" price="$1.40" />
-          <MenuItem name="Fries" price="$4.99" />
+          <MenuItem name="Fries" price="$4.99" /> {/* Moved from Appetizers */}
         </div>
 
         {/* Soup Section */}
