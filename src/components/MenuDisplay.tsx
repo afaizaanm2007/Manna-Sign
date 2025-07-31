@@ -33,6 +33,11 @@ const MenuDisplay = () => {
             name="Baba Ghannoug"
             prices={[{ label: "Sm", value: "$5.50" }, { label: "Lg", value: "$9.99" }]}
           />
+        </div>
+
+        {/* A La Carte Section */}
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
+          <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">A La Carte</h2>
           <MenuItem
             name="Falafel"
             description="(4 Pieces) Ground chickpeas, fava beans, and spices deep fried golden brown."
@@ -58,6 +63,11 @@ const MenuDisplay = () => {
             description="Creamy strained yogurt spread topped with olive oil and mint."
             price="$6.99"
           />
+          <MenuItem
+            name="French Fries"
+            price="$4.99"
+          />
+          <MenuItem name="Falafel per piece" price="$1.20" />
         </div>
 
         {/* Salads Section */}
@@ -159,12 +169,7 @@ const MenuDisplay = () => {
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Sides</h2>
           <MenuItem name="Aromatic Rice" price="$3.99" />
           <MenuItem name="Pita Bread 1 piece" price="$1.40" />
-          <MenuItem name="Mediterranean Salad" price="$4.99" />
-          <MenuItem name="Tabbouleh Salad" price="$4.99" />
-          <MenuItem name="Greek Salad" price="$4.99" />
-          <MenuItem name="Falafel per piece" price="$1.20" />
           <MenuItem name="Extra Sauce" price="$1.40" />
-          <MenuItem name="Fries" price="$4.99" /> {/* Moved from Appetizers */}
         </div>
 
         {/* Soup Section */}
