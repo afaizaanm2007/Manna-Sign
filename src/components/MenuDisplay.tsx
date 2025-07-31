@@ -13,7 +13,7 @@ const MenuDisplay = () => {
       <div className="flex-grow p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8 max-w-7xl mx-auto w-full">
 
         {/* Appetizers Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Appetizers</h2>
           <MenuItem
             name="Stuffed Grape Leaves"
@@ -65,7 +65,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Salads Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Salads</h2>
           <p className="text-sm text-gray-300 mb-4">Add Chicken to any salad for additional $4.50 or Gyro meat for additional $4.99</p>
           <MenuItem
@@ -86,7 +86,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Sandwiches Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Sandwiches</h2>
           <p className="text-sm text-gray-300 mb-4">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
           <div className="flex justify-between text-yellow-400 font-bold mb-2">
@@ -103,7 +103,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Plates Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Plates</h2>
           <p className="text-sm text-gray-300 mb-4">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
           <MenuItem
@@ -159,7 +159,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Sides Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Sides</h2>
           <MenuItem name="Aromatic Rice" price="$3.99" />
           <MenuItem name="Pita Bread 1 piece" price="$1.40" />
@@ -172,20 +172,20 @@ const MenuDisplay = () => {
         </div>
 
         {/* Soup Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Soup</h2>
           <MenuItem name="Lentil Soup" price="$4.99" />
         </div>
 
         {/* Kids Meals Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Kids Meals</h2>
           <p className="text-sm text-gray-300 mb-4">Served with choice of chips or fries and a drink</p>
           <MenuItem name="Chicken Tenders" price="$10.50" />
         </div>
 
         {/* Drinks Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Drinks</h2>
           <MenuItem name="Coke Products" price="$2.99" />
           <MenuItem name="Hot or Cold Tea" price="$2.75" />
@@ -193,7 +193,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Desserts Section */}
-        <div className="col-span-1">
+        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Desserts</h2>
           <MenuItem name="Baklava" price="$3.50" />
         </div>
