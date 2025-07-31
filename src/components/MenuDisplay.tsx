@@ -1,16 +1,44 @@
 import React from 'react';
+import MenuItem from './MenuItem';
 
 const MenuDisplay = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-screen bg-gray-900 text-white p-8">
-      <h1 className="text-6xl font-extrabold mb-8 text-center text-yellow-400">Manna Grill</h1>
-      <h2 className="text-4xl font-bold mb-12 text-center">Your Delicious Menu Awaits!</h2>
-      <p className="text-2xl text-gray-300 text-center">
-        This is where the first half of your menu will go.
-      </p>
-      <p className="text-2xl text-gray-300 text-center mt-4">
-        Ready for your menu items!
-      </p>
+    <div className="flex flex-col h-screen w-screen">
+      {/* Top Red Section */}
+      <div className="bg-red-700 h-1/6 flex items-center justify-center p-4">
+        <h1 className="text-6xl font-extrabold text-yellow-400 text-center">Manna Grill</h1>
+      </div>
+
+      {/* Yellow Menu Content Section */}
+      <div className="flex-grow bg-yellow-400 text-gray-900 p-12 flex flex-col justify-start items-center overflow-y-auto">
+        <h2 className="text-red-700 text-5xl font-extrabold mb-10 uppercase tracking-wider text-center">Appetizers</h2>
+
+        <div className="w-full max-w-3xl">
+          <MenuItem
+            name="Stuffed Grape Leaves"
+            description="(4 Pieces) Grape leaves stuffed with rice, tomato, parsley, onion and garlic."
+            price="$7.99"
+          />
+          <MenuItem
+            name="Kibbeh (Kibby)"
+            description="(1 Piece) Ground beef mixed with cracked wheat formed into a shell and stuffed with cooked ground beef, pine nuts and spices; then deep fried golden brown."
+            price="$3.99"
+          />
+          <MenuItem
+            name="Hummus"
+            price=".sm $5.50 .Lg $9.99"
+          />
+          <MenuItem
+            name="Baba Ghannoug"
+            price=".sm $5.50 .Lg $9.99"
+          />
+        </div>
+      </div>
+
+      {/* Bottom Red Section */}
+      <div className="bg-red-700 h-1/6 flex items-center justify-center p-4">
+        <p className="text-white text-2xl text-center">Your Delicious Menu Awaits!</p>
+      </div>
     </div>
   );
 };
