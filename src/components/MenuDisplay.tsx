@@ -26,10 +26,10 @@ const MenuDisplay = () => {
         style={{ width: '200vw', transform: activeHalf === 1 ? 'translateX(-50%)' : 'translateX(0%)' }}
       >
         {/* First Half: Sandwiches and Plates */}
-        <div className="w-1/2 flex-shrink-0 p-4 md:p-8 overflow-y-auto">
-          <div className="flex flex-row gap-x-8 mx-auto w-full h-full"> {/* Changed to flex-row and added h-full */}
+        <div className="w-1/2 flex-shrink-0 p-4 md:p-8"> {/* Removed overflow-y-auto */}
+          <div className="flex flex-row gap-x-8 mx-auto w-full h-full">
             {/* Sandwiches Section */}
-            <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* Added flex-1 and flex flex-col */}
+            <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-6">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
               <div className="flex justify-between text-yellow-400 font-bold mb-4 text-xl sm:text-2xl">
@@ -37,58 +37,62 @@ const MenuDisplay = () => {
                 <span className="w-1/4 text-right">Combo</span>
                 <span className="w-1/4 text-right">Sandwich</span>
               </div>
-              <MenuItem name="Gyro" comboPrice="$12.50" sandwichPrice="$9.50" />
-              <MenuItem name="Chicken Shawarma" comboPrice="$12.50" sandwichPrice="$9.50" />
-              <MenuItem name="Kafta Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
-              <MenuItem name="Lamb Shawarma" comboPrice="$13.50" sandwichPrice="$10.99" />
-              <MenuItem name="Vegetarian Falafel" comboPrice="$12.50" sandwichPrice="$9.50" />
-              <MenuItem name="Chicken Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
+              <div className="flex flex-col flex-grow justify-around"> {/* New container for vertical distribution */}
+                <MenuItem name="Gyro" comboPrice="$12.50" sandwichPrice="$9.50" />
+                <MenuItem name="Chicken Shawarma" comboPrice="$12.50" sandwichPrice="$9.50" />
+                <MenuItem name="Kafta Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
+                <MenuItem name="Lamb Shawarma" comboPrice="$13.50" sandwichPrice="$10.99" />
+                <MenuItem name="Vegetarian Falafel" comboPrice="$12.50" sandwichPrice="$9.50" />
+                <MenuItem name="Chicken Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
+              </div>
             </div>
 
             {/* Plates Section */}
-            <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* Added flex-1 and flex flex-col */}
+            <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
-              <MenuItem
-                name="Beef Kafta Kabob"
-                price="$17.50"
-              />
-              <MenuItem
-                name="Lamb Shawarma"
-                price="$20.99"
-              />
-              <MenuItem
-                name="Chicken Shawarma"
-                price="$17.50"
-              />
-              <MenuItem
-                name="Chicken Kabob"
-                price="$17.50"
-              />
-              <MenuItem
-                name="Lamb Kabob"
-                price="$19.99"
-              />
-              <MenuItem
-                name="Gyro"
-                price="$17.50"
-              />
-              <MenuItem
-                name="Mixed Grill Platter"
-                price="$20.99"
-              />
-              <MenuItem
-                name="Vegetarian Falafel Platter"
-                price="$13.99"
-              />
-              <MenuItem
-                name="Vegetarian Combination Platter"
-                price="$14.99"
-              />
-              <MenuItem
-                name="Lamb Shank"
-                price="$21.99"
-              />
+              <div className="flex flex-col flex-grow justify-around"> {/* New container for vertical distribution */}
+                <MenuItem
+                  name="Beef Kafta Kabob"
+                  price="$17.50"
+                />
+                <MenuItem
+                  name="Lamb Shawarma"
+                  price="$20.99"
+                />
+                <MenuItem
+                  name="Chicken Shawarma"
+                  price="$17.50"
+                />
+                <MenuItem
+                  name="Chicken Kabob"
+                  price="$17.50"
+                />
+                <MenuItem
+                  name="Lamb Kabob"
+                  price="$19.99"
+                />
+                <MenuItem
+                  name="Gyro"
+                  price="$17.50"
+                />
+                <MenuItem
+                  name="Mixed Grill Platter"
+                  price="$20.99"
+                />
+                <MenuItem
+                  name="Vegetarian Falafel Platter"
+                  price="$13.99"
+                />
+                <MenuItem
+                  name="Vegetarian Combination Platter"
+                  price="$14.99"
+                />
+                <MenuItem
+                  name="Lamb Shank"
+                  price="$21.99"
+                />
+              </div>
             </div>
           </div>
         </div>
