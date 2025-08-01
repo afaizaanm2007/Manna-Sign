@@ -10,26 +10,36 @@ interface MenuItemProps {
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, prices, comboPrice, sandwichPrice }) => {
+  const isSandwichType = comboPrice || sandwichPrice;
+
   return (
     <div className="mb-8 pb-6 border-b border-gray-700 last:border-b-0">
       <div className="flex justify-between items-baseline mb-3">
+        {/* Always display name */}
         <h3 className="text-4xl sm:text-5xl font-semibold text-yellow-400">{name}</h3>
-        {price && <span className="text-4xl sm:text-5xl font-semibold text-yellow-400">{price}</span>}
-        {prices && (
+
+        {/* Display simple price or multiple prices if not a sandwich type */}
+        {!isSandwichType && price && <span className="text-4xl sm:text-5xl font-semibold text-yellow-400">{price}</span>}
+        {!isSandwichType && prices && (
           <div className="flex flex-wrap justify-end gap-x-8 text-4xl sm:text-5xl font-semibold text-yellow-400">
             {prices.map((p, index) => (
               <span key={index}>{p.label} {p.value}</span>
             ))}
           </div>
         )}
-        {(comboPrice || sandwichPrice) && (
-          <div className="flex flex-grow justify-end text-yellow-400">
-            {comboPrice && <span className="w-1/2 text-right text-xl sm:text-2xl">{comboPrice}</span>}
-            {sandwichPrice && <span className="w-1/2 text-right text-xl sm:text-2xl">{sandwichPrice}</span>}
-          </div>
-        )}
       </div>
-      {description && <p className="text-xl sm:text-2xl text-gray-300">{description}</p>}
+
+      {/* Display combo/sandwich prices on a new line, aligned to columns */}
+      {isSandwichType && (
+        <div className="flex justify-end text-yellow-400 mt-2"> {/* Added mt-2 for spacing from name */}
+          {/* This empty span takes up the space where the name would be in the header row, ensuring prices align */}
+          <span className="w-1/2"></span>
+          {comboPrice && <span className="w-1/4 text-right text-xl sm:text-2xl font-semibold">{comboPrice}</span>}
+          {sandwichPrice && <span className="w-1/4 text-right text-xl sm:text-2xl font-semibold">{sandwichPrice}</span>}
+        </div>
+      )}
+
+      {description && <p className="text-xl sm:text-2xl text-gray-300 mt-3">{description}</p>} {/* Added mt-3 for spacing from prices */}
     </div>
   );
 };
