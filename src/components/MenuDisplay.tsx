@@ -4,11 +4,6 @@ import MenuItem from './MenuItem';
 const MenuDisplay = () => {
   return (
     <div className="flex flex-col min-h-screen bg-red-950 text-white">
-      {/* Top Header - Adjusted for vertical screen prominence */}
-      <div className="bg-red-700 py-8 md:py-4 flex flex-col items-center justify-center w-full">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-yellow-400 text-center tracking-wide leading-tight">Manna Grill</h1>
-      </div>
-
       {/* Main Menu Content Area */}
       <div className="flex-grow p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-16 mx-auto w-full">
 
@@ -73,8 +68,8 @@ const MenuDisplay = () => {
           <MenuItem name="Chicken Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
         </div>
 
-        {/* Plates Section - now spans 2 rows */}
-        <div className="col-span-1 row-span-2 bg-red-900 p-10 rounded-lg shadow-lg">
+        {/* Plates Section - now spans 2 rows and fills height */}
+        <div className="col-span-1 row-span-2 bg-red-900 p-10 rounded-lg shadow-lg h-full">
           <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
           <p className="text-lg sm:text-xl text-gray-300 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
           <MenuItem
@@ -129,8 +124,8 @@ const MenuDisplay = () => {
           />
         </div>
 
-        {/* Sides Section - now spans 2 rows */}
-        <div className="col-span-1 row-span-2 bg-red-900 p-10 rounded-lg shadow-lg">
+        {/* Sides Section - now spans 2 rows and fills height */}
+        <div className="col-span-1 row-span-2 bg-red-900 p-10 rounded-lg shadow-lg h-full">
           <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sides</h2>
           <MenuItem name="Aromatic Rice" price="$3.99" />
           <MenuItem name="Pita Bread 1 piece" price="$1.40" />
