@@ -160,7 +160,7 @@ const MenuDisplay = () => {
               </div>
 
               {/* Kids Meals Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 here */}
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* Added flex-1 back here */}
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Kids Meals</h2>
                 <p className="text-lg sm:text-xl text-gray-100 mb-2">Served with choice of chips or fries and a drink</p>
                 <div className="flex flex-col flex-grow justify-around">
