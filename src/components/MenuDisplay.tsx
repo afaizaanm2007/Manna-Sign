@@ -188,7 +188,7 @@ const MenuDisplay = () => {
             {/* Right Column of Second Half (Sides ONLY) */}
             <div className="flex flex-col flex-1 gap-y-8">
               {/* Sides Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 here */}
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Sides</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Aromatic Rice" price="$3.99" />
