@@ -73,8 +73,8 @@ const MenuDisplay = () => {
           <MenuItem name="Chicken Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
         </div>
 
-        {/* Plates Section */}
-        <div className="col-span-1 bg-red-900 p-10 rounded-lg shadow-lg">
+        {/* Plates Section - now spans 2 rows */}
+        <div className="col-span-1 row-span-2 bg-red-900 p-10 rounded-lg shadow-lg">
           <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
           <p className="text-lg sm:text-xl text-gray-300 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
           <MenuItem
@@ -129,8 +129,8 @@ const MenuDisplay = () => {
           />
         </div>
 
-        {/* Sides Section */}
-        <div className="col-span-1 bg-red-900 p-10 rounded-lg shadow-lg">
+        {/* Sides Section - now spans 2 rows */}
+        <div className="col-span-1 row-span-2 bg-red-900 p-10 rounded-lg shadow-lg">
           <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sides</h2>
           <MenuItem name="Aromatic Rice" price="$3.99" />
           <MenuItem name="Pita Bread 1 piece" price="$1.40" />
@@ -167,31 +167,34 @@ const MenuDisplay = () => {
           <MenuItem name="Falafel per piece" price="$1.20" />
         </div>
 
-        {/* Soup Section */}
-        <div className="col-span-1 bg-red-900 p-10 rounded-lg shadow-lg">
-          <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Soup</h2>
-          <MenuItem name="Lentil Soup" price="$4.99" />
-        </div>
+        {/* Combined Column for Soup, Kids, Drinks, Desserts - spans 2 rows */}
+        <div className="col-span-1 row-span-2 flex flex-col justify-between gap-y-8">
+          {/* Soup Section - shorter padding */}
+          <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-grow">
+            <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Soup</h2>
+            <MenuItem name="Lentil Soup" price="$4.99" />
+          </div>
 
-        {/* Kids Meals Section */}
-        <div className="col-span-1 bg-red-900 p-10 rounded-lg shadow-lg">
-          <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Kids Meals</h2>
-          <p className="text-lg sm:text-xl text-gray-300 mb-6">Served with choice of chips or fries and a drink</p>
-          <MenuItem name="Chicken Tenders" price="$10.50" />
-        </div>
+          {/* Kids Meals Section - shorter padding */}
+          <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-grow">
+            <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Kids Meals</h2>
+            <p className="text-lg sm:text-xl text-gray-300 mb-6">Served with choice of chips or fries and a drink</p>
+            <MenuItem name="Chicken Tenders" price="$10.50" />
+          </div>
 
-        {/* Drinks Section */}
-        <div className="col-span-1 bg-red-900 p-10 rounded-lg shadow-lg">
-          <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Drinks</h2>
-          <MenuItem name="Coke Products" price="$2.99" />
-          <MenuItem name="Hot or Cold Tea" price="$2.75" />
-          <MenuItem name="Turkish Coffee" price="$4.99" />
-        </div>
+          {/* Drinks Section - shorter padding */}
+          <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-grow">
+            <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Drinks</h2>
+            <MenuItem name="Coke Products" price="$2.99" />
+            <MenuItem name="Hot or Cold Tea" price="$2.75" />
+            <MenuItem name="Turkish Coffee" price="$4.99" />
+          </div>
 
-        {/* Desserts Section */}
-        <div className="col-span-1 bg-red-900 p-10 rounded-lg shadow-lg">
-          <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Desserts</h2>
-          <MenuItem name="Baklava" price="$3.50" />
+          {/* Desserts Section - shorter padding */}
+          <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-grow">
+            <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Desserts</h2>
+            <MenuItem name="Baklava" price="$3.50" />
+          </div>
         </div>
 
         {/* Catering Available */}
