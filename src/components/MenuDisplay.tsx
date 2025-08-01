@@ -27,9 +27,9 @@ const MenuDisplay = () => {
       >
         {/* First Half: Sandwiches and Plates */}
         <div className="w-1/2 flex-shrink-0 p-4 md:p-8 overflow-y-auto">
-          <div className="flex flex-col gap-y-16 mx-auto w-full"> {/* Removed max-w-4xl */}
+          <div className="flex flex-col gap-y-8 mx-auto w-full"> {/* Adjusted gap-y-16 to gap-y-8 */}
             {/* Sandwiches Section */}
-            <div className="bg-red-900 p-10 rounded-lg shadow-lg">
+            <div className="bg-red-900 p-6 rounded-lg shadow-lg"> {/* Adjusted p-10 to p-6 */}
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-6">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
               <div className="flex justify-between text-yellow-400 font-bold mb-4 text-xl sm:text-2xl">
@@ -46,7 +46,7 @@ const MenuDisplay = () => {
             </div>
 
             {/* Plates Section */}
-            <div className="bg-red-900 p-10 rounded-lg shadow-lg">
+            <div className="bg-red-900 p-6 rounded-lg shadow-lg"> {/* Adjusted p-10 to p-6 */}
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
               <p className="text-lg sm:text-xl text-gray-300 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
               <MenuItem
@@ -95,7 +95,7 @@ const MenuDisplay = () => {
 
         {/* Second Half: Appetizers, Salads, Sides, Soup, Kids, Drinks, Desserts */}
         <div className="w-1/2 flex-shrink-0 p-4 md:p-8 overflow-y-auto">
-          <div className="flex flex-col gap-y-16 mx-auto w-full"> {/* Removed max-w-4xl */}
+          <div className="flex flex-col gap-y-16 mx-auto w-full">
             {/* Appetizers Section */}
             <div className="bg-red-900 p-10 rounded-lg shadow-lg">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Appetizers</h2>
