@@ -4,9 +4,9 @@ import MenuItem from './MenuItem';
 const MenuDisplay = () => {
   return (
     <div className="flex flex-col min-h-screen bg-red-950 text-white">
-      {/* Top Header */}
-      <div className="bg-red-700 py-6 flex items-center justify-center">
-        <h1 className="text-6xl font-extrabold text-yellow-400 text-center tracking-wide">Manna Grill</h1>
+      {/* Top Header - Adjusted for vertical screen prominence */}
+      <div className="bg-red-700 py-12 md:py-6 flex flex-col items-center justify-center h-48 md:h-auto">
+        <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-extrabold text-yellow-400 text-center tracking-wide leading-tight">Manna Grill</h1>
       </div>
 
       {/* Main Menu Content Area */}
@@ -199,11 +199,6 @@ const MenuDisplay = () => {
           <p className="text-3xl font-extrabold text-yellow-400 uppercase tracking-wider">Catering Available</p>
         </div>
 
-      </div>
-
-      {/* Bottom Footer */}
-      <div className="bg-red-700 py-6 flex items-center justify-center">
-        <p className="text-white text-2xl text-center">Enjoy your meal!</p>
       </div>
     </div>
   );
