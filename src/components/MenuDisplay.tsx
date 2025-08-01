@@ -117,7 +117,7 @@ const MenuDisplay = () => {
             {/* Left Column of Second Half (Appetizers, Salads, Kids) */}
             <div className="flex flex-col flex-1 gap-y-8">
               {/* Appetizers Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-[1.2] flex flex-col"> {/* Changed to flex-[1.2] */}
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-[1.4] flex flex-col"> {/* Changed to flex-[1.4] */}
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Appetizers</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem
@@ -160,7 +160,7 @@ const MenuDisplay = () => {
               </div>
 
               {/* Kids Meals Section */}
-              <div className="bg-red-900 p-6 py-8 rounded-lg shadow-lg flex-1 flex flex-col"> {/* Re-added flex-1 and kept py-8 */}
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* Removed py-8 */}
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Kids Meals</h2>
                 <p className="text-lg sm:text-xl text-gray-100 mb-2">Served with choice of chips or fries and a drink</p>
                 <div className="flex flex-col flex-grow justify-around">
