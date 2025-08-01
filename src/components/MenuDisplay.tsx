@@ -110,11 +110,11 @@ const MenuDisplay = () => {
           </div>
         </div>
 
-        {/* Second Half: Appetizers, Salads, Kids, Soup, Desserts (left column), Sides (right column) */}
+        {/* Second Half: Appetizers, Salads, Kids (left column), Sides, Soup, Desserts (right column) */}
         <div className="w-1/2 flex-shrink-0 p-4 md:p-8">
           <div className="flex flex-row gap-x-8 mx-auto w-full h-full">
 
-            {/* Left Column of Second Half (Appetizers, Salads, Kids, Soup, Desserts) */}
+            {/* Left Column of Second Half (Appetizers, Salads, Kids) */}
             <div className="flex flex-col flex-1 gap-y-8">
               {/* Appetizers Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
@@ -167,25 +167,9 @@ const MenuDisplay = () => {
                   <MenuItem name="Chicken Tenders" price="$10.50" />
                 </div>
               </div>
-
-              {/* Soup Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
-                <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Soup</h2>
-                <div className="flex flex-col flex-grow justify-around">
-                  <MenuItem name="Lentil Soup" price="$4.99" />
-                </div>
-              </div>
-
-              {/* Desserts Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
-                <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Desserts</h2>
-                <div className="flex flex-col flex-grow justify-around">
-                  <MenuItem name="Baklava" price="$3.50" />
-                </div>
-              </div>
             </div>
 
-            {/* Right Column of Second Half (Sides ONLY) */}
+            {/* Right Column of Second Half (Sides, Soup, Desserts) */}
             <div className="flex flex-col flex-1 gap-y-8">
               {/* Sides Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
@@ -199,6 +183,22 @@ const MenuDisplay = () => {
                   <MenuItem name="Falafel per piece" price="$1.20" />
                   <MenuItem name="Extra Sauce" price="$1.40" />
                   <MenuItem name="French Fries" price="$4.99" />
+                </div>
+              </div>
+
+              {/* Soup Section (MOVED HERE) */}
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Soup</h2>
+                <div className="flex flex-col flex-grow justify-around">
+                  <MenuItem name="Lentil Soup" price="$4.99" />
+                </div>
+              </div>
+
+              {/* Desserts Section (MOVED HERE) */}
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Desserts</h2>
+                <div className="flex flex-col flex-grow justify-around">
+                  <MenuItem name="Baklava" price="$3.50" />
                 </div>
               </div>
             </div>
