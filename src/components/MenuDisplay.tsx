@@ -129,37 +129,12 @@ const MenuDisplay = () => {
           <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sides</h2>
           <MenuItem name="Aromatic Rice" price="$3.99" />
           <MenuItem name="Pita Bread 1 piece" price="$1.40" />
-          <MenuItem name="Extra Sauce" price="$1.40" />
-          <MenuItem
-            name="Falafel (4 Pieces)"
-            description="Ground chickpeas, fava beans, and spices deep fried golden brown."
-            price="$7.99"
-          />
-          <MenuItem
-            name="Fatayer (Spinach Pie)"
-            description="(1 Piece) Baked dough stuffed with spinach, onion, pine nuts, sumac and lemon juice."
-            price="$3.99"
-          />
-          <MenuItem
-            name="Sambousik (Meat Pie)"
-            description="(1 Piece) Baked dough stuffed with ground beef, onion and pine nuts."
-            price="$3.99"
-          />
-          <MenuItem
-            name="Foul Mudammas"
-            description="Fava beans cooked and seasoned with garlic, lemon juice and olive oil."
-            price="$7.99"
-          />
-          <MenuItem
-            name="Labneh"
-            description="Creamy strained yogurt spread topped with olive oil and mint."
-            price="$6.99"
-          />
-          <MenuItem
-            name="French Fries"
-            price="$4.99"
-          />
+          <MenuItem name="Mediterranean Salad" price="$4.99" />
+          <MenuItem name="Tabbouleh Salad" price="$4.99" />
+          <MenuItem name="Greek Salad" price="$4.99" />
           <MenuItem name="Falafel per piece" price="$1.20" />
+          <MenuItem name="Extra Sauce" price="$1.40" />
+          <MenuItem name="French Fries" price="$4.99" />
         </div>
 
         {/* Combined Column for Soup, Kids, Drinks, Desserts - spans 2 rows */}
