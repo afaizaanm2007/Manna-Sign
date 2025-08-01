@@ -35,41 +35,6 @@ const MenuDisplay = () => {
           />
         </div>
 
-        {/* A La Carte Section */}
-        <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
-          <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">A La Carte</h2>
-          <MenuItem
-            name="Falafel"
-            description="(4 Pieces) Ground chickpeas, fava beans, and spices deep fried golden brown."
-            price="$7.99"
-          />
-          <MenuItem
-            name="Fatayer (Spinach Pie)"
-            description="(1 Piece) Baked dough stuffed with spinach, onion, pine nuts, sumac and lemon juice."
-            price="$3.99"
-          />
-          <MenuItem
-            name="Sambousik (Meat Pie)"
-            description="(1 Piece) Baked dough stuffed with ground beef, onion and pine nuts."
-            price="$3.99"
-          />
-          <MenuItem
-            name="Foul Mudammas"
-            description="Fava beans cooked and seasoned with garlic, lemon juice and olive oil."
-            price="$7.99"
-          />
-          <MenuItem
-            name="Labneh"
-            description="Creamy strained yogurt spread topped with olive oil and mint."
-            price="$6.99"
-          />
-          <MenuItem
-            name="French Fries"
-            price="$4.99"
-          />
-          <MenuItem name="Falafel per piece" price="$1.20" />
-        </div>
-
         {/* Salads Section */}
         <div className="col-span-1 bg-red-900 p-6 rounded-lg shadow-lg">
           <h2 className="text-4xl font-extrabold text-yellow-400 mb-6 border-b-4 border-yellow-400 pb-2 uppercase">Salads</h2>
@@ -170,6 +135,36 @@ const MenuDisplay = () => {
           <MenuItem name="Aromatic Rice" price="$3.99" />
           <MenuItem name="Pita Bread 1 piece" price="$1.40" />
           <MenuItem name="Extra Sauce" price="$1.40" />
+          <MenuItem
+            name="Falafel (4 Pieces)"
+            description="Ground chickpeas, fava beans, and spices deep fried golden brown."
+            price="$7.99"
+          />
+          <MenuItem
+            name="Fatayer (Spinach Pie)"
+            description="(1 Piece) Baked dough stuffed with spinach, onion, pine nuts, sumac and lemon juice."
+            price="$3.99"
+          />
+          <MenuItem
+            name="Sambousik (Meat Pie)"
+            description="(1 Piece) Baked dough stuffed with ground beef, onion and pine nuts."
+            price="$3.99"
+          />
+          <MenuItem
+            name="Foul Mudammas"
+            description="Fava beans cooked and seasoned with garlic, lemon juice and olive oil."
+            price="$7.99"
+          />
+          <MenuItem
+            name="Labneh"
+            description="Creamy strained yogurt spread topped with olive oil and mint."
+            price="$6.99"
+          />
+          <MenuItem
+            name="French Fries"
+            price="$4.99"
+          />
+          <MenuItem name="Falafel per piece" price="$1.20" />
         </div>
 
         {/* Soup Section */}
