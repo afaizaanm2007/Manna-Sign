@@ -5,7 +5,7 @@ const MenuDisplay = () => {
   return (
     <div className="flex flex-col min-h-screen bg-red-950 text-white">
       {/* Main Menu Content Area */}
-      <div className="flex flex-col gap-y-16 p-8 mx-auto w-full max-w-4xl">
+      <div className="flex flex-col gap-y-16 p-4 md:p-8 mx-auto w-full">
 
         {/* Appetizers Section */}
         <div className="bg-red-900 p-10 rounded-lg shadow-lg">
