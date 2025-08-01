@@ -23,9 +23,9 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, prices, c
           </div>
         )}
         {(comboPrice || sandwichPrice) && (
-          <div className="flex flex-col items-end text-yellow-400 text-right">
-            {comboPrice && <span className="text-xl sm:text-2xl">Combo: {comboPrice}</span>}
-            {sandwichPrice && <span className="text-xl sm:text-2xl">Sandwich: {sandwichPrice}</span>}
+          <div className="flex flex-grow justify-end text-yellow-400">
+            {comboPrice && <span className="w-1/2 text-right text-xl sm:text-2xl">{comboPrice}</span>}
+            {sandwichPrice && <span className="w-1/2 text-right text-xl sm:text-2xl">{sandwichPrice}</span>}
           </div>
         )}
       </div>
