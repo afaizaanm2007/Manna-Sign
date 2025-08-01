@@ -27,7 +27,7 @@ const MenuDisplay = () => {
       >
         {/* First Half: Sandwiches and Plates */}
         <div className="w-1/2 flex-shrink-0 p-4 md:p-8 overflow-y-auto">
-          <div className="flex flex-col gap-y-16 mx-auto w-full max-w-4xl">
+          <div className="flex flex-col gap-y-16 mx-auto w-full"> {/* Removed max-w-4xl */}
             {/* Sandwiches Section */}
             <div className="bg-red-900 p-10 rounded-lg shadow-lg">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2>
@@ -51,52 +51,42 @@ const MenuDisplay = () => {
               <p className="text-lg sm:text-xl text-gray-300 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
               <MenuItem
                 name="Beef Kafta Kabob"
-                description="Seasoned ground beef with spiced onion and parsley, served with 2 sides and pita bread."
                 price="$17.50"
               />
               <MenuItem
                 name="Lamb Shawarma"
-                description="Chopped boneless leg lamb marinated with 12 spices and grilled. Served with 2 sides and pita bread."
                 price="$20.99"
               />
               <MenuItem
                 name="Chicken Shawarma"
-                description="Thinly sliced marinated chicken served with 2 sides and pita bread."
                 price="$17.50"
               />
               <MenuItem
                 name="Chicken Kabob"
-                description="Marinated chicken lightly seasoned and grilled. Served with 2 sides and pita bread."
                 price="$17.50"
               />
               <MenuItem
                 name="Lamb Kabob"
-                description="Marinated lamb grilled and served with 2 sides and pita bread."
                 price="$19.99"
               />
               <MenuItem
                 name="Gyro"
-                description="Perfectly seasoned and slow cooked on a vertical rotisserie, served with our homemade gyro sauce, 2 sides and pita bread."
                 price="$17.50"
               />
               <MenuItem
                 name="Mixed Grill Platter"
-                description="Combination of Kafta Kabob, Chicken Kabob, Lamb Kabob and Gyro Meat served with 2 sides and pita bread."
                 price="$20.99"
               />
               <MenuItem
                 name="Vegetarian Falafel Platter"
-                description="(6 Pieces) Seasoned mixture of ground chickpeas and fava beans, vegetables formed into patties and deep fried golden brown and served with tahini sauce, 1 side and pita bread."
                 price="$13.99"
               />
               <MenuItem
                 name="Vegetarian Combination Platter"
-                description="Combination of falafel, stuffed grape leaves, hummus, baba ghannoug, served with 1 side and pita bread."
                 price="$14.99"
               />
               <MenuItem
                 name="Lamb Shank"
-                description="Marinated shank slowly braised until fork tender and served with 2 sides and pita bread."
                 price="$21.99"
               />
             </div>
@@ -105,18 +95,16 @@ const MenuDisplay = () => {
 
         {/* Second Half: Appetizers, Salads, Sides, Soup, Kids, Drinks, Desserts */}
         <div className="w-1/2 flex-shrink-0 p-4 md:p-8 overflow-y-auto">
-          <div className="flex flex-col gap-y-16 mx-auto w-full max-w-4xl">
+          <div className="flex flex-col gap-y-16 mx-auto w-full"> {/* Removed max-w-4xl */}
             {/* Appetizers Section */}
             <div className="bg-red-900 p-10 rounded-lg shadow-lg">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Appetizers</h2>
               <MenuItem
                 name="Stuffed Grape Leaves"
-                description="(4 Pieces) Grape leaves stuffed with rice, tomato, parsley, onion and garlic."
                 price="$7.99"
               />
               <MenuItem
                 name="Kibbeh (Kibby)"
-                description="(1 Piece) Ground beef mixed with cracked wheat formed into a shell and stuffed with cooked ground beef, pine nuts and spices; then deep fried golden brown."
                 price="$3.99"
               />
               <MenuItem
@@ -135,17 +123,14 @@ const MenuDisplay = () => {
               <p className="text-lg sm:text-xl text-gray-300 mb-6">Add Chicken to any salad for additional $4.50 or Gyro meat for additional $4.99</p>
               <MenuItem
                 name="Greek Salad"
-                description="A fresh bed of chopped lettuce, tomatoes, red onion, banana peppers, cucumber, and feta cheese with Greek dressing"
                 price="$9.99"
               />
               <MenuItem
                 name="Mediterranean Salad"
-                description="A fresh bed of chopped lettuce, cucumber, green onion, tomatoes, served with a lemon juice and olive oil dressing."
                 price="$9.99"
               />
               <MenuItem
                 name="Tabbouleh Salad"
-                description="Finely chopped parsley, green onion, tomatoes and mint mixed with cracked wheat, olive oil, lemon juice and salt."
                 price="$9.99"
               />
             </div>
