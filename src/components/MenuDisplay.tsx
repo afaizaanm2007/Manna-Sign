@@ -159,7 +159,7 @@ const MenuDisplay = () => {
                 </div>
               </div>
 
-              {/* Kids Meals Section (MOVED HERE) */}
+              {/* Kids Meals Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Kids Meals</h2>
                 <p className="text-lg sm:text-xl text-gray-100 mb-2">Served with choice of chips or fries and a drink</p>
@@ -168,7 +168,7 @@ const MenuDisplay = () => {
                 </div>
               </div>
 
-              {/* Soup Section (MOVED HERE) */}
+              {/* Soup Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Soup</h2>
                 <div className="flex flex-col flex-grow justify-around">
@@ -176,7 +176,7 @@ const MenuDisplay = () => {
                 </div>
               </div>
 
-              {/* Desserts Section (MOVED HERE) */}
+              {/* Desserts Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Desserts</h2>
                 <div className="flex flex-col flex-grow justify-around">
@@ -188,7 +188,7 @@ const MenuDisplay = () => {
             {/* Right Column of Second Half (Sides ONLY) */}
             <div className="flex flex-col flex-1 gap-y-8">
               {/* Sides Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 here */}
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Sides</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Aromatic Rice" price="$3.99" />
