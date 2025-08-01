@@ -33,13 +33,13 @@ const MenuDisplay = () => {
               {/* Sandwiches Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* flex-1 to take half height */}
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2>
-                <p className="text-lg sm:text-xl text-gray-100 mb-6">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p> {/* Changed text-gray-300 to text-gray-100 */}
+                <p className="text-lg sm:text-xl text-gray-100 mb-6">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
                 <div className="flex justify-between text-yellow-400 font-bold mb-4 text-xl sm:text-2xl">
                   <span className="w-1/2"></span>
                   <span className="w-1/4 text-right">Combo</span>
                   <span className="w-1/4 text-right">Sandwich</span>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col flex-grow justify-around"> {/* Added flex-grow justify-around */}
                   <MenuItem name="Gyro" comboPrice="$12.50" sandwichPrice="$9.50" />
                   <MenuItem name="Chicken Shawarma" comboPrice="$12.50" sandwichPrice="$9.50" />
                   <MenuItem name="Kafta Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
@@ -52,17 +52,19 @@ const MenuDisplay = () => {
               {/* Drinks Section (moved from second half) */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* flex-1 to take half height */}
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Drinks</h2>
-                <MenuItem name="Coke Products" price="$2.99" />
-                <MenuItem name="Hot or Cold Tea" price="$2.75" />
-                <MenuItem name="Turkish Coffee" price="$4.99" />
+                <div className="flex flex-col flex-grow justify-around"> {/* Added flex-grow justify-around */}
+                  <MenuItem name="Coke Products" price="$2.99" />
+                  <MenuItem name="Hot or Cold Tea" price="$2.75" />
+                  <MenuItem name="Turkish Coffee" price="$4.99" />
+                </div>
               </div>
             </div>
 
             {/* Right Column: Plates Section (remains as is) */}
             <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
-              <p className="text-lg sm:text-xl text-gray-100 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p> {/* Changed text-gray-300 to text-gray-100 */}
-              <div className="flex flex-col flex-grow justify-around">
+              <p className="text-lg sm:text-xl text-gray-100 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
+              <div className="flex flex-col flex-grow justify-around"> {/* This remains as is */}
                 <MenuItem
                   name="Beef Kafta Kabob"
                   price="$17.50"
