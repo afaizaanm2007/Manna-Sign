@@ -13,10 +13,10 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, prices, c
   return (
     <div className="mb-8 pb-6 border-b border-gray-700 last:border-b-0">
       <div className="flex justify-between items-baseline mb-3">
-        <h3 className="text-3xl sm:text-4xl font-semibold text-yellow-400">{name}</h3>
-        {price && <span className="text-3xl sm:text-4xl font-semibold text-yellow-400">{price}</span>}
+        <h3 className="text-4xl sm:text-5xl font-semibold text-yellow-400">{name}</h3>
+        {price && <span className="text-4xl sm:text-5xl font-semibold text-yellow-400">{price}</span>}
         {prices && (
-          <div className="flex flex-wrap justify-end gap-x-8 text-3xl sm:text-4xl font-semibold text-yellow-400">
+          <div className="flex flex-wrap justify-end gap-x-8 text-4xl sm:text-5xl font-semibold text-yellow-400">
             {prices.map((p, index) => (
               <span key={index}>{p.label} {p.value}</span>
             ))}
@@ -24,12 +24,12 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, prices, c
         )}
         {(comboPrice || sandwichPrice) && (
           <div className="flex flex-col items-end text-yellow-400 text-right">
-            {comboPrice && <span className="text-lg sm:text-xl">Combo: {comboPrice}</span>}
-            {sandwichPrice && <span className="text-lg sm:text-xl">Sandwich: {sandwichPrice}</span>}
+            {comboPrice && <span className="text-xl sm:text-2xl">Combo: {comboPrice}</span>}
+            {sandwichPrice && <span className="text-xl sm:text-2xl">Sandwich: {sandwichPrice}</span>}
           </div>
         )}
       </div>
-      {description && <p className="text-lg sm:text-xl text-gray-300">{description}</p>}
+      {description && <p className="text-xl sm:text-2xl text-gray-300">{description}</p>}
     </div>
   );
 };
