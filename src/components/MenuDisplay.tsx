@@ -191,12 +191,6 @@ const MenuDisplay = () => {
             <MenuItem name="Baklava" price="$3.50" />
           </div>
         </div>
-
-        {/* Catering Available */}
-        <div className="col-span-full text-center mt-12">
-          <p className="text-4xl sm:text-5xl font-extrabold text-yellow-400 uppercase tracking-wider">Catering Available</p>
-        </div>
-
       </div>
     </div>
   );
