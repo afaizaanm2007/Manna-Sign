@@ -25,21 +25,21 @@ const MenuDisplay = () => {
         className={`flex transition-transform duration-500 ease-in-out h-full`}
         style={{ width: '200vw', transform: activeHalf === 1 ? 'translateX(-50%)' : 'translateX(0%)' }}
       >
-        {/* First Half: Sandwiches, New Section (left column) and Plates (right column) */}
+        {/* First Half: Sandwiches, Drinks (left column) and Plates (right column) */}
         <div className="w-1/2 flex-shrink-0 p-4 md:p-8">
           <div className="flex flex-row gap-x-8 mx-auto w-full h-full">
-            {/* Left Column: Sandwiches and a new section below it */}
+            {/* Left Column: Sandwiches and Drinks */}
             <div className="flex flex-col flex-1 gap-y-8"> {/* New flex-col container for left side */}
               {/* Sandwiches Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* flex-1 to take half height */}
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2>
-                <p className="text-lg sm:text-xl text-gray-300 mb-6">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
+                <p className="text-lg sm:text-xl text-gray-100 mb-6">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p> {/* Changed text-gray-300 to text-gray-100 */}
                 <div className="flex justify-between text-yellow-400 font-bold mb-4 text-xl sm:text-2xl">
                   <span className="w-1/2"></span>
                   <span className="w-1/4 text-right">Combo</span>
                   <span className="w-1/4 text-right">Sandwich</span>
                 </div>
-                <div className="flex flex-col"> {/* Reverted: Removed flex-grow and justify-around */}
+                <div className="flex flex-col">
                   <MenuItem name="Gyro" comboPrice="$12.50" sandwichPrice="$9.50" />
                   <MenuItem name="Chicken Shawarma" comboPrice="$12.50" sandwichPrice="$9.50" />
                   <MenuItem name="Kafta Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
@@ -49,18 +49,20 @@ const MenuDisplay = () => {
                 </div>
               </div>
 
-              {/* New Placeholder Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col justify-center items-center"> {/* flex-1 to take half height */}
-                <h2 className="text-5xl font-extrabold text-yellow-400 uppercase">New Section Placeholder</h2>
-                <p className="text-lg sm:text-xl text-gray-300 mt-4">Content for the new section will go here.</p>
+              {/* Drinks Section (moved from second half) */}
+              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* flex-1 to take half height */}
+                <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Drinks</h2>
+                <MenuItem name="Coke Products" price="$2.99" />
+                <MenuItem name="Hot or Cold Tea" price="$2.75" />
+                <MenuItem name="Turkish Coffee" price="$4.99" />
               </div>
             </div>
 
             {/* Right Column: Plates Section (remains as is) */}
             <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
-              <p className="text-lg sm:text-xl text-gray-300 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
-              <div className="flex flex-col flex-grow justify-around"> {/* This remains as is */}
+              <p className="text-lg sm:text-xl text-gray-100 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p> {/* Changed text-gray-300 to text-gray-100 */}
+              <div className="flex flex-col flex-grow justify-around">
                 <MenuItem
                   name="Beef Kafta Kabob"
                   price="$17.50"
@@ -106,7 +108,7 @@ const MenuDisplay = () => {
           </div>
         </div>
 
-        {/* Second Half: Appetizers, Salads, Sides, Soup, Kids, Drinks, Desserts */}
+        {/* Second Half: Appetizers, Salads, Sides, Soup, Kids, Desserts */}
         <div className="w-1/2 flex-shrink-0 p-4 md:p-8 overflow-y-auto">
           <div className="flex flex-col gap-y-16 mx-auto w-full">
             {/* Appetizers Section */}
@@ -161,7 +163,7 @@ const MenuDisplay = () => {
               <MenuItem name="French Fries" price="$4.99" />
             </div>
 
-            {/* Combined Column for Soup, Kids, Drinks, Desserts */}
+            {/* Combined Column for Soup, Kids, Desserts */}
             <div className="flex flex-col justify-between gap-y-8">
               {/* Soup Section - shorter padding */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-grow">
@@ -174,14 +176,6 @@ const MenuDisplay = () => {
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Kids Meals</h2>
                 <p className="text-lg sm:text-xl text-gray-300 mb-6">Served with choice of chips or fries and a drink</p>
                 <MenuItem name="Chicken Tenders" price="$10.50" />
-              </div>
-
-              {/* Drinks Section - shorter padding */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-grow">
-                <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Drinks</h2>
-                <MenuItem name="Coke Products" price="$2.99" />
-                <MenuItem name="Hot or Cold Tea" price="$2.75" />
-                <MenuItem name="Turkish Coffee" price="$4.99" />
               </div>
 
               {/* Desserts Section - shorter padding */}
