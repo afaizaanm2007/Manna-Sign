@@ -5,8 +5,8 @@ const MenuDisplay = () => {
   return (
     <div className="flex flex-col min-h-screen bg-red-950 text-white">
       {/* Top Header - Adjusted for vertical screen prominence */}
-      <div className="bg-red-700 py-12 md:py-6 flex flex-col items-center justify-center min-h-[25vh] w-full">
-        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-yellow-400 text-center tracking-wide leading-tight">Manna Grill</h1>
+      <div className="bg-red-700 py-8 md:py-4 flex flex-col items-center justify-center w-full">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-yellow-400 text-center tracking-wide leading-tight">Manna Grill</h1>
       </div>
 
       {/* Main Menu Content Area */}
