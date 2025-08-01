@@ -20,7 +20,7 @@ const MenuDisplay = () => {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-red-950 text-gray-200">
+    <div className="relative w-screen h-screen overflow-hidden bg-red-950 text-gray-200 font-bold"> {/* Added font-bold here */}
       <div
         className={`flex transition-transform duration-500 ease-in-out h-full`}
         style={{ width: '200vw', transform: activeHalf === 1 ? 'translateX(-50%)' : 'translateX(0%)' }}
@@ -33,7 +33,7 @@ const MenuDisplay = () => {
               {/* Sandwiches Section */}
               <div className="bg-red-900 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2>
-                <p className="text-lg sm:text-xl text-gray-300 mb-2">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
+                <p className="text-xl sm:text-2xl text-gray-300 font-bold mb-2">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p> {/* Increased size and ensured bold */}
                 <div className="flex justify-between text-yellow-400 font-bold mb-2 text-xl sm:text-2xl">
                   <span className="w-1/2"></span>
                   <span className="w-1/4 text-right">Combo</span>
@@ -63,7 +63,7 @@ const MenuDisplay = () => {
             {/* Right Column: Plates Section */}
             <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
-              <p className="text-lg sm:text-xl text-gray-300 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
+              <p className="text-xl sm:text-2xl text-gray-300 font-bold mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p> {/* Increased size and ensured bold */}
               <div className="flex flex-col flex-grow justify-around">
                 <MenuItem
                   name="Beef Kafta Kabob"
@@ -142,7 +142,7 @@ const MenuDisplay = () => {
               {/* Salads Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Salads</h2>
-                <p className="text-lg sm:text-xl text-gray-300 mb-2">Add Chicken to any salad for additional $4.50 or Gyro meat for additional $4.99</p>
+                <p className="text-xl sm:text-2xl text-gray-300 font-bold mb-2">Add Chicken to any salad for additional $4.50 or Gyro meat for additional $4.99</p> {/* Increased size and ensured bold */}
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem
                     name="Greek Salad"
@@ -162,7 +162,7 @@ const MenuDisplay = () => {
               {/* Kids Meals Section */}
               <div className="bg-red-900 p-6 rounded-lg shadow-lg flex flex-col">
                 <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Kids Meals</h2>
-                <p className="text-lg sm:text-xl text-gray-300 mb-2">Served with choice of chips or fries and a drink</p>
+                <p className="text-xl sm:text-2xl text-gray-300 font-bold mb-2">Served with choice of chips or fries and a drink</p> {/* Increased size and ensured bold */}
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Chicken Tenders" price="$10.50" />
                 </div>

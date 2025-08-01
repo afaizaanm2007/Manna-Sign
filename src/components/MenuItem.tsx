@@ -31,15 +31,15 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price, prices, c
 
       {/* Display combo/sandwich prices on a new line, aligned to columns */}
       {isSandwichType && (
-        <div className="flex justify-end text-yellow-400 mt-2"> {/* Adjusted mt-2 for spacing from name */}
+        <div className="flex justify-end text-yellow-400 mt-2">
           {/* This empty span takes up the space where the name would be in the header row, ensuring prices align */}
           <span className="w-1/2"></span>
-          {comboPrice && <span className="w-1/4 text-right text-xl sm:text-2xl font-semibold">{comboPrice}</span>}
-          {sandwichPrice && <span className="w-1/4 text-right text-xl sm:text-2xl font-semibold">{sandwichPrice}</span>}
+          {comboPrice && <span className="w-1/4 text-right text-2xl sm:text-3xl font-bold">{comboPrice}</span>} {/* Increased size and ensured bold */}
+          {sandwichPrice && <span className="w-1/4 text-right text-2xl sm:text-3xl font-bold">{sandwichPrice}</span>} {/* Increased size and ensured bold */}
         </div>
       )}
 
-      {description && <p className="text-xl sm:text-2xl text-gray-300 mt-2">{description}</p>} {/* Adjusted mt-2 for spacing from prices */}
+      {description && <p className="text-2xl sm:text-3xl text-gray-400 font-bold mt-2">{description}</p>} {/* Increased size and ensured bold */}
     </div>
   );
 };
