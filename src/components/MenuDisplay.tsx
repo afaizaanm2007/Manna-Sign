@@ -31,15 +31,15 @@ const MenuDisplay = () => {
             {/* Left Column: Sandwiches and Drinks */}
             <div className="flex flex-col flex-1 gap-y-8"> {/* New flex-col container for left side */}
               {/* Sandwiches Section */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* flex-1 to take half height */}
-                <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2>
-                <p className="text-lg sm:text-xl text-gray-100 mb-6">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
-                <div className="flex justify-between text-yellow-400 font-bold mb-4 text-xl sm:text-2xl">
+              <div className="bg-red-900 p-4 rounded-lg shadow-lg flex-1 flex flex-col"> {/* Changed p-6 to p-4 */}
+                <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Sandwiches</h2> {/* Changed mb-8 to mb-4 */}
+                <p className="text-lg sm:text-xl text-gray-100 mb-2">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p> {/* Changed mb-6 to mb-2 */}
+                <div className="flex justify-between text-yellow-400 font-bold mb-2 text-xl sm:text-2xl"> {/* Changed mb-4 to mb-2 */}
                   <span className="w-1/2"></span>
                   <span className="w-1/4 text-right">Combo</span>
                   <span className="w-1/4 text-right">Sandwich</span>
                 </div>
-                <div className="flex flex-col flex-grow justify-around"> {/* Added flex-grow justify-around */}
+                <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Gyro" comboPrice="$12.50" sandwichPrice="$9.50" />
                   <MenuItem name="Chicken Shawarma" comboPrice="$12.50" sandwichPrice="$9.50" />
                   <MenuItem name="Kafta Kabob" comboPrice="$12.50" sandwichPrice="$9.50" />
@@ -50,9 +50,9 @@ const MenuDisplay = () => {
               </div>
 
               {/* Drinks Section (moved from second half) */}
-              <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* flex-1 to take half height */}
-                <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Drinks</h2>
-                <div className="flex flex-col flex-grow justify-around"> {/* Added flex-grow justify-around */}
+              <div className="bg-red-900 p-4 rounded-lg shadow-lg flex-1 flex flex-col"> {/* Changed p-6 to p-4 */}
+                <h2 className="text-5xl font-extrabold text-yellow-400 mb-4 border-b-4 border-yellow-400 pb-4 uppercase">Drinks</h2> {/* Changed mb-8 to mb-4 */}
+                <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Coke Products" price="$2.99" />
                   <MenuItem name="Hot or Cold Tea" price="$2.75" />
                   <MenuItem name="Turkish Coffee" price="$4.99" />
@@ -64,7 +64,7 @@ const MenuDisplay = () => {
             <div className="bg-red-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
               <h2 className="text-5xl font-extrabold text-yellow-400 mb-8 border-b-4 border-yellow-400 pb-4 uppercase">Plates</h2>
               <p className="text-lg sm:text-xl text-gray-100 mb-6">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
-              <div className="flex flex-col flex-grow justify-around"> {/* This remains as is */}
+              <div className="flex flex-col flex-grow justify-around">
                 <MenuItem
                   name="Beef Kafta Kabob"
                   price="$17.50"
