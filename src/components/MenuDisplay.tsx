@@ -31,7 +31,7 @@ const MenuDisplay = () => {
       {/* Top Red Decorative Bar */}
       <div 
         className="absolute top-0 left-0 w-full h-16 bg-destructive rounded-bl-[50%_2rem] rounded-br-[50%_2rem] z-10 
-                   bg-[url('/red-pattern-transparent.png')] bg-no-repeat bg-bottom bg-[length:100%_auto]"
+                   bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-bottom bg-[size:auto_100%]"
       ></div>
 
       {/* Main Content Area (Yellow) */}
@@ -169,7 +169,7 @@ const MenuDisplay = () => {
       {/* Bottom Red Decorative Bar */}
       <div className="absolute bottom-0 left-0 w-full h-16 bg-destructive rounded-tl-[50%_2rem] rounded-tr-[50%_2rem] z-10 overflow-hidden">
         <div 
-          className="w-full h-full bg-[url('/red-pattern-transparent.png')] bg-no-repeat bg-top bg-[length:100%_auto]"
+          className="w-full h-full bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-top bg-[size:auto_100%]"
           style={{ transform: 'scaleY(-1)' }}
         ></div>
       </div>
