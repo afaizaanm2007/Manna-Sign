@@ -179,9 +179,9 @@ const MenuDisplay = () => {
             {/* Right Column of Second Half (Sides, Soup, Desserts) */}
             <div className="flex flex-col flex-1 gap-y-4"> {/* Reduced gap-y */}
               {/* Sides Section */}
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* This will now take more space */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Sides</h2> {/* Adjusted font size and margin/padding */}
-                <div className="flex flex-col flex-grow justify-around">
+                <div className="flex flex-col flex-grow justify-around"> {/* Items will spread out more */}
                   <MenuItem name="Aromatic Rice" price="$3.99" />
                   <MenuItem name="Pita Bread 1 piece" price="$1.40" />
                   <MenuItem name="Mediterranean Salad" price="$4.99" />
@@ -194,7 +194,7 @@ const MenuDisplay = () => {
               </div>
 
               {/* Soup Section */}
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 to shrink to content */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Soup</h2> {/* Adjusted font size and margin/padding */}
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Lentil Soup" price="$4.99" />
@@ -202,7 +202,7 @@ const MenuDisplay = () => {
               </div>
 
               {/* Desserts Section */}
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 to shrink to content */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Desserts</h2> {/* Adjusted font size and margin/padding */}
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Baklava" price="$3.50" />
@@ -343,9 +343,9 @@ const MenuDisplay = () => {
               </div>
             </div>
             <div className="flex flex-col flex-1 gap-y-4">
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* This will now take more space */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Sides (Copy)</h2>
-                <div className="flex flex-col flex-grow justify-around">
+                <div className="flex flex-col flex-grow justify-around"> {/* Items will spread out more */}
                   <MenuItem name="Aromatic Rice" price="$3.99" />
                   <MenuItem name="Pita Bread 1 piece" price="$1.40" />
                   <MenuItem name="Mediterranean Salad" price="$4.99" />
@@ -356,13 +356,13 @@ const MenuDisplay = () => {
                   <MenuItem name="French Fries" price="$4.99" />
                 </div>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 to shrink to content */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Soup (Copy)</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Lentil Soup" price="$4.99" />
                 </div>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 to shrink to content */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Desserts (Copy)</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Baklava" price="$3.50" />
