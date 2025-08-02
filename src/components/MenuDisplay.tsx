@@ -29,10 +29,10 @@ const MenuDisplay = () => {
       />
 
       {/* Top Red Decorative Bar */}
-      <div className="absolute top-0 left-0 w-full h-20 bg-destructive rounded-bl-[50%_2rem] rounded-br-[50%_2rem] z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-16 bg-destructive rounded-bl-[50%_2rem] rounded-br-[50%_2rem] z-10"></div>
 
       {/* Main Content Area (Yellow) */}
-      <div className="absolute top-20 bottom-20 left-0 right-0 bg-yellow-400 text-gray-900 flex flex-row p-4 md:p-8 z-10">
+      <div className="absolute top-16 bottom-16 left-0 right-0 bg-yellow-400 text-gray-900 flex flex-row p-4 md:p-8 z-10">
         <div
           className={`flex transition-transform duration-500 ease-in-out h-full`}
           style={{ width: '200vw', transform: `translateX(-${activeHalf * 50}%)` }}
@@ -42,10 +42,10 @@ const MenuDisplay = () => {
             {/* Left Column: Sandwiches and Drinks */}
             <div className="flex flex-col flex-1 gap-y-2">
               {/* Sandwiches Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Sandwiches</h2>
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-1">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
-                <div className="flex justify-between text-red-700 font-bold mb-1 text-xl sm:text-2xl md:text-3xl">
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Sandwiches</h2>
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-0.5">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
+                <div className="flex justify-between text-red-700 font-bold mb-0.5 text-xl sm:text-2xl md:text-3xl">
                   <span className="w-1/2"></span>
                   <span className="w-1/4 text-right">Combo</span>
                   <span className="w-1/4 text-right">Sandwich</span>
@@ -61,8 +61,8 @@ const MenuDisplay = () => {
               </div>
 
               {/* Drinks Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Drinks</h2>
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Drinks</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Coke Products" price="$2.99" />
                   <MenuItem name="Hot or Cold Tea" price="$2.75" />
@@ -72,9 +72,9 @@ const MenuDisplay = () => {
             </div>
 
             {/* Right Column: Plates Section */}
-            <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Plates</h2>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-1">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
+            <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex-1 flex flex-col">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Plates</h2>
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-0.5">Choice of sides: Fries, Rice, Salads, 2 Falafels or Hummus</p>
               <div className="flex flex-col flex-grow justify-around">
                 <MenuItem name="Beef Kafta Kabob" price="$17.50" />
                 <MenuItem name="Lamb Shawarma" price="$20.99" />
@@ -95,8 +95,8 @@ const MenuDisplay = () => {
             {/* Left Column of Second Half (Appetizers, Salads, Kids) */}
             <div className="flex flex-col flex-1 gap-y-2">
               {/* Appetizers Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Appetizers</h2>
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Appetizers</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Stuffed Grape Leaves" price="$7.99" />
                   <MenuItem name="Kibbeh (Kibby)" price="$3.99" />
@@ -106,9 +106,9 @@ const MenuDisplay = () => {
               </div>
 
               {/* Salads Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Salads</h2>
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-1">Add Chicken to any salad for additional $4.50 or Gyro meat for additional $4.99</p>
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Salads</h2>
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-0.5">Add Chicken to any salad for additional $4.50 or Gyro meat for additional $4.99</p>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Greek Salad" price="$9.99" />
                   <MenuItem name="Mediterranean Salad" price="$9.99" />
@@ -117,9 +117,9 @@ const MenuDisplay = () => {
               </div>
 
               {/* Kids Meals Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Kids Meals</h2>
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-1">Served with choice of chips or fries and a drink</p>
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Kids Meals</h2>
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-700 font-bold mb-0.5">Served with choice of chips or fries and a drink</p>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Chicken Tenders" price="$10.50" />
                 </div>
@@ -129,8 +129,8 @@ const MenuDisplay = () => {
             {/* Right Column of Second Half (Sides, Soup, Desserts) */}
             <div className="flex flex-col flex-1 gap-y-2">
               {/* Sides Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Sides</h2>
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Sides</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Aromatic Rice" price="$3.99" />
                   <MenuItem name="Pita Bread 1 piece" price="$1.40" />
@@ -144,16 +144,16 @@ const MenuDisplay = () => {
               </div>
 
               {/* Soup Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Soup</h2>
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Soup</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Lentil Soup" price="$4.99" />
                 </div>
               </div>
 
               {/* Desserts Section */}
-              <div className="bg-gray-100 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-1 border-b-4 border-red-700 pb-2 uppercase">Desserts</h2>
+              <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex flex-col">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Desserts</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Baklava" price="$3.50" />
                 </div>
@@ -164,7 +164,7 @@ const MenuDisplay = () => {
       </div>
 
       {/* Bottom Red Decorative Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-20 bg-destructive rounded-tl-[50%_2rem] rounded-tr-[50%_2rem] z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-destructive rounded-tl-[50%_2rem] rounded-tr-[50%_2rem] z-10"></div>
     </div>
   );
 };
