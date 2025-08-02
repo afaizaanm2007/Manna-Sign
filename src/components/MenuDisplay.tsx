@@ -20,22 +20,20 @@ const MenuDisplay = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-screen h-screen overflow-hidden bg-gray-950 text-gray-200 font-bold">
-      {/* Logo positioned at the top in its own space */}
-      <div className="flex justify-end p-4">
-        <img 
-          src="/manna-grill-logo.png" 
-          alt="Manna Mediterranean Grill Logo" 
-          className="w-24 md:w-32 lg:w-40" 
-        />
-      </div>
+    <div className="relative w-screen h-screen overflow-hidden bg-gray-950 text-gray-200 font-bold">
+      {/* Logo positioned at the top right corner */}
+      <img 
+        src="/manna-grill-logo.png" 
+        alt="Manna Mediterranean Grill Logo" 
+        className="absolute top-4 right-4 z-10 w-24 md:w-32 lg:w-40" 
+      />
 
       <div
-        className={`flex flex-grow transition-transform duration-500 ease-in-out`}
+        className={`flex transition-transform duration-500 ease-in-out h-full`}
         style={{ width: '400vw', transform: `translateX(-${activeHalf * 25}%)` }}
       >
         {/* First Half: Sandwiches, Drinks (left column) and Plates (right column) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8"> {/* Removed pt-24 */}
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full"> {/* Reduced gap-x */}
             {/* Left Column: Sandwiches and Drinks */}
             <div className="flex flex-col flex-1 gap-y-4"> {/* Reduced gap-y */}
@@ -120,7 +118,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Second Half: Appetizers, Salads, Kids (left column), Sides, Soup, Desserts (right column) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8"> {/* Removed pt-24 */}
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full"> {/* Reduced gap-x */}
 
             {/* Left Column of Second Half (Appetizers, Salads, Kids) */}
@@ -215,7 +213,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Third Half (Duplicate of First Half) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8"> {/* Removed pt-24 */}
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full">
             <div className="flex flex-col flex-1 gap-y-4">
               <div className="bg-gray-900 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
@@ -294,7 +292,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Fourth Half (Duplicate of Second Half) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8"> {/* Removed pt-24 */}
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full">
             <div className="flex flex-col flex-1 gap-y-4">
               <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-[2.5] flex flex-col">
@@ -345,9 +343,9 @@ const MenuDisplay = () => {
               </div>
             </div>
             <div className="flex flex-col flex-1 gap-y-4">
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col"> {/* This will now take more space */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Sides (Copy)</h2>
-                <div className="flex flex-col flex-grow justify-around">
+                <div className="flex flex-col flex-grow justify-around"> {/* Items will spread out more */}
                   <MenuItem name="Aromatic Rice" price="$3.99" />
                   <MenuItem name="Pita Bread 1 piece" price="$1.40" />
                   <MenuItem name="Mediterranean Salad" price="$4.99" />
@@ -358,13 +356,13 @@ const MenuDisplay = () => {
                   <MenuItem name="French Fries" price="$4.99" />
                 </div>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 to shrink to content */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Soup (Copy)</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Lentil Soup" price="$4.99" />
                 </div>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-1 flex flex-col">
+              <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex flex-col"> {/* Removed flex-1 to shrink to content */}
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-yellow-400 mb-2 border-b-4 border-yellow-400 pb-2 uppercase">Desserts (Copy)</h2>
                 <div className="flex flex-col flex-grow justify-around">
                   <MenuItem name="Baklava" price="$3.50" />
