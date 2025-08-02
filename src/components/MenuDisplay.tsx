@@ -21,12 +21,19 @@ const MenuDisplay = () => {
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950 text-gray-200 font-bold">
+      {/* Logo positioned at the top center */}
+      <img 
+        src="/manna-logo.png" 
+        alt="Manna Mediterranean Grill Logo" 
+        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-10 w-32 md:w-48 lg:w-64" 
+      />
+
       <div
         className={`flex transition-transform duration-500 ease-in-out h-full`}
         style={{ width: '400vw', transform: `translateX(-${activeHalf * 25}%)` }}
       >
         {/* First Half: Sandwiches, Drinks (left column) and Plates (right column) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8">
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full"> {/* Reduced gap-x */}
             {/* Left Column: Sandwiches and Drinks */}
             <div className="flex flex-col flex-1 gap-y-4"> {/* Reduced gap-y */}
@@ -111,7 +118,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Second Half: Appetizers, Salads, Kids (left column), Sides, Soup, Desserts (right column) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8">
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full"> {/* Reduced gap-x */}
 
             {/* Left Column of Second Half (Appetizers, Salads, Kids) */}
@@ -206,7 +213,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Third Half (Duplicate of First Half) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8">
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full">
             <div className="flex flex-col flex-1 gap-y-4">
               <div className="bg-gray-900 p-4 rounded-lg shadow-lg flex-1 flex flex-col">
@@ -285,7 +292,7 @@ const MenuDisplay = () => {
         </div>
 
         {/* Fourth Half (Duplicate of Second Half) */}
-        <div className="w-1/4 flex-shrink-0 p-4 md:p-8">
+        <div className="w-1/4 flex-shrink-0 p-4 md:p-8 pt-24"> {/* Added pt-24 to push content down */}
           <div className="flex flex-row gap-x-4 mx-auto w-full h-full">
             <div className="flex flex-col flex-1 gap-y-4">
               <div className="bg-gray-900 p-6 rounded-lg shadow-lg flex-[2.5] flex flex-col">
