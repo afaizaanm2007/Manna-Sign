@@ -29,16 +29,16 @@ const MenuDisplay = () => {
       />
 
       {/* Top Red Decorative Bar */}
-      <div className="absolute top-0 left-0 w-full h-12 bg-destructive rounded-bl-[50%_2rem] rounded-br-[50%_2rem] z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-16 bg-destructive rounded-bl-[50%_2rem] rounded-br-[50%_2rem] z-10"></div>
 
       {/* Main Content Area (Yellow) */}
-      <div className="absolute top-12 bottom-12 left-0 right-0 bg-yellow-400 text-gray-900 flex flex-row p-4 md:p-8 z-10">
+      <div className="absolute top-16 bottom-16 left-0 right-0 bg-yellow-400 text-gray-900 flex flex-row p-4 md:p-8 z-10">
         <div
           className={`flex transition-transform duration-500 ease-in-out h-full`}
-          style={{ width: '200vw', transform: `translateX(-${activeHalf * 50}%)` }}
+          style={{ width: '200vw', transform: `translateX(-${activeHalf * 100}vw)` }}
         >
           {/* First Half (Page 1): Sandwiches, Drinks (left column) and Plates (right column) */}
-          <div className="w-1/2 flex-shrink-0 flex flex-row gap-x-2 mx-auto w-full h-full">
+          <div className="w-screen flex-shrink-0 flex flex-row gap-x-2 h-full">
             {/* Left Column: Sandwiches and Drinks */}
             <div className="flex flex-col flex-1 gap-y-2">
               {/* Sandwiches Section */}
@@ -91,7 +91,7 @@ const MenuDisplay = () => {
           </div>
 
           {/* Second Half (Page 2): Appetizers, Salads, Kids (left column), Sides, Soup, Desserts (right column) */}
-          <div className="w-1/2 flex-shrink-0 flex flex-row gap-x-2 mx-auto w-full h-full">
+          <div className="w-screen flex-shrink-0 flex flex-row gap-x-2 h-full">
             {/* Left Column of Second Half (Appetizers, Salads, Kids) */}
             <div className="flex flex-col flex-1 gap-y-2">
               {/* Appetizers Section */}
@@ -164,7 +164,7 @@ const MenuDisplay = () => {
       </div>
 
       {/* Bottom Red Decorative Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-12 bg-destructive rounded-tl-[50%_2rem] rounded-tr-[50%_2rem] z-10"></div>
+      <div className="absolute bottom-0 left-0 w-full h-16 bg-destructive rounded-tl-[50%_2rem] rounded-tr-[50%_2rem] z-10"></div>
     </div>
   );
 };
