@@ -42,21 +42,11 @@ const MenuDisplay = () => {
         ></div>
       </div>
 
-      {/* Left Patterned Border */}
-      <div className="absolute top-16 bottom-16 left-0 w-16 overflow-hidden z-20">
-        <div 
-          className="absolute inset-0 bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-bottom bg-[size:auto_100%]"
-          style={{ transform: 'rotate(-90deg) translate(0, -100%)', transformOrigin: 'top left' }}
-        ></div>
-      </div>
+      {/* Left Solid Border */}
+      <div className="absolute top-16 bottom-16 left-0 w-16 bg-destructive z-20"></div>
 
-      {/* Right Patterned Border */}
-      <div className="absolute top-16 bottom-16 right-0 w-16 overflow-hidden z-20">
-        <div 
-          className="absolute inset-0 bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-bottom bg-[size:auto_100%]"
-          style={{ transform: 'rotate(90deg) translate(0, -100%)', transformOrigin: 'top right' }}
-        ></div>
-      </div>
+      {/* Right Solid Border */}
+      <div className="absolute top-16 bottom-16 right-0 w-16 bg-destructive z-20"></div>
 
       {/* Main Content Area (Yellow) - now inset within the border */}
       <div className="absolute top-16 bottom-16 left-16 right-16 bg-yellow-400 text-gray-900 flex flex-row z-10">
