@@ -28,23 +28,31 @@ const MenuDisplay = () => {
         className="absolute top-4 right-4 z-20 w-24 md:w-32 lg:w-40" 
       />
 
-      {/* Top Red Decorative Bar */}
-      <div 
-        className="absolute top-0 left-0 w-full h-16 bg-destructive rounded-bl-[50%_2rem] rounded-br-[50%_2rem] z-10 
-                   bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-bottom bg-[size:auto_100%]"
-      ></div>
+      {/* Outer Red Border Container */}
+      <div className="absolute inset-0 bg-destructive"> {/* This div creates the solid red border */}
+        {/* Top Pattern Overlay */}
+        <div 
+          className="absolute top-0 left-0 w-full h-16 
+                     bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-bottom bg-[size:auto_100%]"
+        ></div>
 
-      {/* Main Content Area (Yellow) */}
-      <div className="absolute top-16 bottom-16 left-0 right-0 bg-yellow-400 text-gray-900 flex flex-row z-10">
-        <div
-          className={`flex transition-transform duration-500 ease-in-out h-full`}
-          style={{ width: '200vw', transform: `translateX(-${activeHalf * 100}vw)` }}
-        >
-          {/* First Half (Page 1): Sandwiches, Drinks (left column) and Plates (right column) */}
-          <div className="w-screen flex-shrink-0 flex flex-row gap-x-4 p-4 md:p-8 h-full">
-            {/* Left Column: Sandwiches and Drinks */}
-            <div className="flex flex-col flex-1 gap-y-4">
-              {/* Sandwiches Section */}
+        {/* Bottom Pattern Overlay */}
+        <div className="absolute bottom-0 left-0 w-full h-16 overflow-hidden">
+          <div 
+            className="w-full h-full bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-top bg-[size:auto_100%]"
+            style={{ transform: 'scaleY(-1)' }}
+          ></div>
+        </div>
+
+        {/* Main Content Area (Yellow) - now inset within the red border */}
+        <div className="absolute inset-16 bg-yellow-400 text-gray-900 flex flex-row z-10">
+          <div
+            className={`flex transition-transform duration-500 ease-in-out h-full`}
+            style={{ width: '200vw', transform: `translateX(-${activeHalf * 100}vw)` }}
+          >
+            {/* First Half (Page 1): Sandwiches, Drinks (left column) and Plates (right column) */}
+            <div className="w-screen flex-shrink-0 flex flex-row gap-x-4 p-4 md:p-8 h-full">
+              {/* Left Column: Sandwiches and Drinks */}
               <div className="bg-gray-100 p-3 rounded-lg shadow-lg flex-1 flex flex-col">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-red-700 mb-0.5 border-b-4 border-red-700 pb-2 uppercase">Sandwiches</h2>
                 <p className="text-base sm:text-lg md:text-xl text-gray-700 font-bold mb-0.5">Combos served with 1 side: Rice, Fries, Chips or 2 Falafels and Drink</p>
@@ -164,14 +172,6 @@ const MenuDisplay = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Bottom Red Decorative Bar */}
-      <div className="absolute bottom-0 left-0 w-full h-16 bg-destructive rounded-tl-[50%_2rem] rounded-tr-[50%_2rem] z-10 overflow-hidden">
-        <div 
-          className="w-full h-full bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-top bg-[size:auto_100%]"
-          style={{ transform: 'scaleY(-1)' }}
-        ></div>
       </div>
     </div>
   );
