@@ -25,7 +25,7 @@ const MenuDisplay = () => {
       <img 
         src="/manna-grill-logo.png" 
         alt="Manna Mediterranean Grill Logo" 
-        className="absolute top-4 right-4 z-10 w-32 md:w-48 lg:w-64" 
+        className="absolute top-4 right-4 z-10 w-24 md:w-32 lg:w-40" 
       />
 
       <div
