@@ -23,7 +23,7 @@ const MenuDisplay = () => {
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950 text-gray-200 font-bold">
       {/* Logo positioned at the top center */}
       <img 
-        src="/manna-logo.png" 
+        src="/manna-grill-logo.png" 
         alt="Manna Mediterranean Grill Logo" 
         className="absolute top-4 left-1/2 transform -translate-x-1/2 z-10 w-32 md:w-48 lg:w-64" 
       />
