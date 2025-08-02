@@ -31,22 +31,38 @@ const MenuDisplay = () => {
       {/* Top Patterned Border */}
       <div 
         className="absolute top-0 left-0 right-0 h-16 
-                   bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-bottom bg-[size:auto_100%] z-20"
+                   bg-[url('/red-semicircle-pattern.png')] bg-repeat-x bg-bottom bg-[size:auto_100%] z-20"
       ></div>
 
       {/* Bottom Patterned Border */}
       <div className="absolute bottom-0 left-0 right-0 h-16 overflow-hidden z-20">
         <div 
-          className="w-full h-full bg-[url('/red-pattern-transparent.png')] bg-repeat-x bg-top bg-[size:auto_100%]"
+          className="w-full h-full bg-[url('/red-semicircle-pattern.png')] bg-repeat-x bg-top bg-[size:auto_100%]"
           style={{ transform: 'scaleY(-1)' }}
         ></div>
       </div>
 
-      {/* Left Solid Border (Reverted) */}
-      <div className="absolute top-16 bottom-16 left-0 w-16 bg-destructive z-20"></div>
+      {/* Left Patterned Border (Outer) */}
+      <div className="absolute top-16 bottom-16 left-0 w-16 overflow-hidden z-20">
+        <div 
+          className="absolute inset-0 bg-[url('/red-semicircle-pattern.png')] bg-repeat-x bg-[size:auto_100%]"
+          style={{ 
+            transform: 'rotate(90deg) translateX(-100%)', 
+            transformOrigin: 'top left',
+          }}
+        ></div>
+      </div>
 
-      {/* Right Solid Border (Reverted) */}
-      <div className="absolute top-16 bottom-16 right-0 w-16 bg-destructive z-20"></div>
+      {/* Right Patterned Border (Outer) */}
+      <div className="absolute top-16 bottom-16 right-0 w-16 overflow-hidden z-20">
+        <div 
+          className="absolute inset-0 bg-[url('/red-semicircle-pattern.png')] bg-repeat-x bg-[size:auto_100%]"
+          style={{ 
+            transform: 'rotate(-90deg) translateX(100%)', 
+            transformOrigin: 'top right',
+          }}
+        ></div>
+      </div>
 
       {/* Main Content Area (Yellow) - now inset within the border */}
       <div className="absolute top-16 bottom-16 left-16 right-16 bg-yellow-400 text-gray-900 flex flex-row z-10">
