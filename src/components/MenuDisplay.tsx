@@ -19,14 +19,24 @@ const MenuDisplay = () => {
     };
   }, []);
 
+  const togglePage = () => {
+    setActiveHalf(prev => (prev === 0 ? 1 : 0));
+  };
+
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950 text-gray-200 font-bold">
-      {/* Logo positioned at the top right corner */}
-      <img 
-        src="/manna-grill-logo.png" 
-        alt="Manna Mediterranean Grill Logo" 
-        className="absolute top-4 right-4 z-20 w-24 md:w-32 lg:w-40" 
-      />
+      {/* Logo positioned at the top right corner and made clickable */}
+      <button 
+        onClick={togglePage}
+        className="absolute top-4 right-4 z-20 w-24 md:w-32 lg:w-40 bg-transparent border-none p-0 cursor-pointer"
+        style={{ outline: 'none' }} // Remove focus outline for a cleaner look
+      >
+        <img 
+          src="/manna-grill-logo.png" 
+          alt="Manna Mediterranean Grill Logo" 
+          className="w-full h-full object-contain" 
+        />
+      </button>
 
       {/* Top Patterned Border */}
       <div 
